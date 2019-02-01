@@ -1,0 +1,28 @@
+{
+  "author": "Francisco Tavares de Lima Neto",
+  "description": "Quickly flattens a deeply nested array without using functional recursion",
+  "devDependencies": {
+    "rollup": "~1.1.2",
+    "tape": "~4.9.2"
+  },
+  "keywords": [
+    "array",
+    "flatten",
+    "plain"
+  ],
+  "license": "MIT",
+  "main": "index.cjs.js",
+  "module": "index.js",
+  "name": "plain-array",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franciscotln/plain-array.git"
+  },
+  "scripts": {
+    "build": "rollup $npm_package_module -o $npm_package_main --f cjs",
+    "pretest": "npm run build",
+    "test": "tape test.js",
+    "prepare": "npm test"
+  },
+  "version": "1.0.0"
+}
